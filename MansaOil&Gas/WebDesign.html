@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Corrected viewport tag -->
+    <title>Mansa Oil & Gas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="C:\Users\mcjal\OneDrive\Documents\Html Docs\MansaOil&Gas\logo.png.png" type="image/x-icon">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="WebDesign.html"><img src="C:\Users\mcjal\OneDrive\Documents\Html Docs\MansaOil&Gas\logo.png.png" alt="Mansa Oil & Gas Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li> 
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Mansa Oil & Gas</h1>
+            <p>Fueling Your Journey One Mile at a Time</p>
+            <a href="contact.html" class="hero-btn">Contact Us To Know More</a> <!-- Updated href to link to the contact section -->
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="AboutUs" id="about-us">
+        <h1>About Us</h1>
+        <p>Mansa Oil, LLC</p>
+        <div class="row">
+            <div class="AboutUs-col">
+                <h3>Your Premier Destination</h3>
+                <p>At Mansa Oil & Gas, we lead the industry with our wealth of expertise and dedication to safety, efficiency, and environmental responsibility. 
+                    Our tailored services cater to the unique demands of the oil field sector, ensuring reliability in the energy supply chain.
+                </p>
+            </div>
+            <div class="AboutUs-col">
+                <h3>Commitment to Excellence</h3>
+                <p>Committed to excellence, Mansa Oil & Gas prioritizes safety, efficiency, and environmental stewardship. 
+                    Our customized solutions are designed to meet your specific needs, making us your trusted partner in the complex oil field landscape.
+                </p>
+        </div>
+        <div class="AboutUs-col">
+            <h3>Tailored Solutions</h3>
+            <p>Mansa Oil & Gas understands the intricacies of the oil field industry and offers tailored services to match. 
+                From logistics to safety protocols, rely on us to deliver effective solutions that elevate your project's success. 
+                Choose Mansa Oil & Gas for expertise and personalized service.
+            </p>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h1>Services</h1>
+        <p>Mansa Oil, LLC</p>
+        <div class="row">
+            <!-- First row of services -->
+            <div class="service-col">
+                <img src="C:\Users\mcjal\OneDrive\Documents\Html Docs\Webpage\ProdImg1.jfif"  alt="Produced Water Hauling">
+                <h3>Production Water Hauling</h3>
+                <p>Responsible for handling and disposal of produced water, adhering to environmental regulations.</p>
+            </div>
+            <div class="service-col">
+                <img src="C:\Users\mcjal\OneDrive\Documents\Html Docs\Webpage\ProdImg2.jpeg" alt="Frac Sand Delivery">
+                <h3>Frac Sand Delivery</h3>
+                <p>Timely delivery of frac sand to well sites for hydraulic fracturing operations.</p>
+            </div>
+            <div class="service-col">
+                <img src="C:\Users\mcjal\OneDrive\Documents\Html Docs\Webpage\ProdImg3.jfif" alt="Freshwater Delivery">
+                <h3>Freshwater Delivery</h3>
+                <p>Supplying freshwater for drilling and well operations.</p>
+            </div>
+            <!-- Second row of services -->
+            <div class="service-col">
+                <img src="C:\Users\mcjal\OneDrive\Documents\Html Docs\Webpage\ProdImg4.jpg" alt="Chemical and Material Hauling">
+                <h3>Chemical and Material Hauling</h3>
+                <p>Transporting chemicals and materials used in oil field operations.</p>
+            </div>
+            <div class="service-col">
+                <img src="C:\Users\mcjal\OneDrive\Documents\Html Docs\Webpage\ProdImg5.jfif" alt="Flowback Fluid Transport">
+                <h3>Flowback Fluid Transport</h3>
+                <p>Managing the flowback process and transporting fluids during well testing.</p>
+            </div>
+            <div class="service-col">
+                <img src="C:\Users\mcjal\OneDrive\Documents\Html Docs\Webpage\ProdImg7.jfif">
+                <h3>OilField Service Work</h3>
+                <p>Our dedicated team operates around the clock, ensuring reliable oilfield service work whenever you need it. </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
+
